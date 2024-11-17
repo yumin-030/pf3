@@ -126,4 +126,21 @@ $('.lang').click(function(){
         $('.footer-b .lang > img').css({'rotate':'0deg'});
         onOff = true;
     }
-})
+});
+
+$('.menu-btn').click(function(){
+    $('.menu-hide').css('display','block');
+    $('body').css('overflow','hidden');
+    $('.close-mn').click(function(){
+        $('.menu-hide').css('display','none');
+        $('body').css('overflow','visible');
+    });
+    return false;
+});
+
+$('.scr-up').click(function(){
+    $('html,body').animate({scrollTop:0},1000);  //천천히 올라감
+});
+$('.scr-down').click(function(){
+    $('html,body').animate({scrollTop:9777},1000);  //천천히 올라감
+});
